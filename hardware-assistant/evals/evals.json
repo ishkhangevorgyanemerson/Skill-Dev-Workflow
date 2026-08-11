@@ -1,0 +1,23 @@
+{
+  "skill_name": "hardware-assistant",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our bench setup suddenly shows unstable voltage readings after a fixture change. Help me troubleshoot the hardware path and tell me what to check first.",
+      "expected_output": "A deterministic triage flow with prioritized checks, expected observations, branch decisions, and validation criteria.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What are practical tradeoffs between using a single shared power rail and per-channel independent rails in a mixed-signal hardware test setup?",
+      "expected_output": "Direct conceptual answer with tradeoffs, constraints, recommendation, and caveats.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I need a short C# example to verify instrument initialization and cleanup behavior for a hardware test sequence. Keep it minimal.",
+      "expected_output": "Concise, runnable C#-style snippet plus explanation of lifecycle safety and validation checks.",
+      "files": []
+    }
+  ]
+}

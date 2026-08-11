@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-08-11",
+  "records": [
+    {
+      "id": "2026-08-11_stl_lcr-multiple-advanced-sequence",
+      "title": "LCR multiple advanced sequence selection pattern",
+      "path": "knowledge-curated/2026-08-11_stl_lcr-multiple-advanced-sequence.md",
+      "status": "approved",
+      "skills": [
+        "semiconductor-test-library-assistant"
+      ],
+      "domains": [
+        "stl",
+        "dcpower",
+        "lcr",
+        "advanced-sequencing"
+      ],
+      "languages": [
+        "csharp"
+      ],
+      "tags": [
+        "multiple-advanced-sequence",
+        "active-sequence-selection",
+        "fetch-points-by-sequence",
+        "sequence-cleanup"
+      ],
+      "reviewed_by": "copilot-cli-assistant",
+      "updated_at": "2026-08-11"
+    }
+  ]
+}

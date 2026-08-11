@@ -1,0 +1,23 @@
+{
+  "skill_name": "semiconductor-test-library-assistant",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a Python semiconductor test library function that measures ACLR for a transmitter path, validates all required parameters, returns a typed result object, and guarantees instrument cleanup on failure.",
+      "expected_output": "Python library-grade function with explicit validation, structured phases, deterministic cleanup, and clear pass/fail evaluation.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a C# test library class for EVM measurement that exposes strongly typed options and result models, logs lifecycle events, and uses robust session disposal patterns.",
+      "expected_output": "C# class-based implementation with typed models, structured orchestration, logging, explicit errors, and safe disposal.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Refactor this mixed-quality semiconductor test helper into maintainable Python and C# equivalents with the same behavior, removing magic numbers and improving error clarity.",
+      "expected_output": "Refactored cross-language outputs preserving behavior while improving structure, constants, validation clarity, and lifecycle safety.",
+      "files": []
+    }
+  ]
+}
