@@ -1,0 +1,33 @@
+{
+  "skill_name": "labview-to-code",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Convert c:\\Users\\rfuser\\Desktop\\Nigel Labview\\Parse XML\\Parse XML.lvproj into a C# .NET solution inside the provided output directory. Preserve the behavior of the example VIs, recursively convert custom SubVIs, keep the XML/XSD support files available at runtime, validate the generated solution with build and run commands, and finish with a conversion-report.md that maps every VI to its generated file, class, and method.",
+      "expected_output": "A runnable C# solution plus a conversion report covering all project-owned VIs and support assets.",
+      "files": [
+        "c:\\Users\\rfuser\\Desktop\\Nigel Labview\\Parse XML\\Parse XML.lvproj"
+      ],
+      "expectations": [
+        "Creates a C# solution file for the converted LabVIEW project.",
+        "Produces a conversion report that maps all three top-level VIs and the helper SubVI.",
+        "Keeps the XML/XSD runtime support files inside the generated output.",
+        "Records successful build and run validation for the generated solution."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Convert c:\\Users\\rfuser\\Desktop\\Nigel Labview\\Parse XML\\Generate XML String with Parser API.vi to Python inside the provided output directory. Recursively convert any project-local SubVIs it depends on, preserve the XML-generation behavior, include a small runnable entry point, and create a conversion-report.md showing the source VI to generated file and function mapping.",
+      "expected_output": "A runnable Python conversion with any required helper modules and a traceable conversion report.",
+      "files": [
+        "c:\\Users\\rfuser\\Desktop\\Nigel Labview\\Parse XML\\Generate XML String with Parser API.vi"
+      ],
+      "expectations": [
+        "Creates a Python conversion file for the XML generator VI.",
+        "Produces a conversion report that maps the helper SubVI recursively.",
+        "Includes a runnable entry point for the generated Python conversion.",
+        "Records successful Python validation commands."
+      ]
+    }
+  ]
+}

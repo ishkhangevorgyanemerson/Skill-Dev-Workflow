@@ -1,0 +1,23 @@
+{
+  "skill_name": "rf-test-plan-layer-mapper",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Discover candidate test-plan sheets and draft mapping for the chosen sheet.",
+      "expected_output": "Candidate-sheet ranking + draft-mapped workbook.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Given original + evaluation + chosen sheet, correct the mapping and summarize learned rules.",
+      "expected_output": "Corrected workbook + learning note.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Given a LIMIT_Simplify workbook, create Predicted Test Step and merged scenario blocks.",
+      "expected_output": "Draft workbook with LIMIT_RF step families.",
+      "files": []
+    }
+  ]
+}

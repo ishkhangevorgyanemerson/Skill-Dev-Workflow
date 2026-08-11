@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stil-to-digipatsrc"
+version = "1.0.0"
+description = "Deterministic NI STS workflow tools for STIL conversion and TSRU test-plan generation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "rfuser" }
+]
+keywords = ["stil", "digipatsrc", "ni-sts", "semiconductor", "pattern", "tsru", "test-plan", "test-sequence"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: Other/Proprietary License",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development :: Testing"
+]
+dependencies = [
+  "openpyxl>=3.1.0"
+]
+
+[project.scripts]
+stil-to-digipatsrc = "stil_to_digipatsrc:main"
+testplan-to-tsru = "testplan_to_tsru:main"
+patternsource-to-patternfile = "patternsource_to_patternfile:main"
+
+[tool.setuptools]
+py-modules = ["stil_parser", "digipatsrc_generator", "stil_to_digipatsrc", "testplan_to_tsru", "patternsource_to_patternfile"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt"]

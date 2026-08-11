@@ -1,0 +1,53 @@
+{
+  "skill_name": "rf-troubleshooting",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have a PA production test on STS. Max Pout is close to target on some lots, but Max Icc does not line up and compared with the customer's bench data our ATE gain looks about 0.3 dB higher. This is mainly at high output power. What should I check first?",
+      "expected_output": "Identifies cable loss, loopback, calibration, and thermal bench-vs-ATE differences as first checks; avoids jumping straight to DUT defect; gives ordered validation actions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My NR EVM result is clearly wrong for a TDD waveform whose start slot is not zero. Bench result is fine. I suspect the DUT is bad, but I am not sure. How would you isolate this?",
+      "expected_output": "Prioritizes measurement offset, time/slot alignment, SA trigger delay, waveform trimming, and loopback; explains why this can be a timing/configuration issue rather than DUT failure.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Only one site in a multi-site RF FEM production setup is failing after long runs, and after hundreds of DUTs we sometimes get a memory resource error. How should I triage this?",
+      "expected_output": "Separates site-specific RF path/calibration checks from long-run software leak investigation; mentions pin map/calibration comparison, Bin1 revalidation, and DETT-style leak tracing.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We use PAVT to measure IL/ISO across several switch states, but the segment powers do not make sense and sometimes one segment looks shifted. What should I verify in the pattern and SA setup?",
+      "expected_output": "Identifies PAVT as the relevant domain, checks segment interval/start/offset alignment between pattern and SA, mentions event0 timing and RFmx SFP breakpoint-based debug, and avoids generic ACP/EVM advice.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our P1dB result is clearly wrong. The DUT seems still linear, but the AMPM-based ramp test never shows the expected compression point. How would you debug that?",
+      "expected_output": "Focuses on ramp-waveform dynamic range, PAPR, and whether the scan reaches the DUT compression region; recommends regenerating the waveform if needed and does not default to blaming DUT hardware.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We are doing harmonic measurement above 6 GHz with HMU SC2250 and calibration keeps failing near the top frequency. What should I inspect first?",
+      "expected_output": "Discusses HMU-specific calibration flow, TDMS and S2P files, frequency coverage including the extra top point, path settings, and harmonic-domain concerns such as shared-LO behavior and external filtering.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I am debugging WLAN DPD. We got error -1074130544, and we also want to pre-store DPD waveforms instead of trimming every DUT. What should the troubleshooting path look like?",
+      "expected_output": "Recognizes this as a DPD workflow issue, mentions LabVIEW adapter Run-Time Engine mode, Trim Flow modes, SaveToFile, RF Load DPD Waveforms, and signal-name consistency.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Our team wants to reduce test time, and the DC and servo-related steps dominate runtime. Also after many DUTs we have seen memory-resource errors. What should we optimize and what tools should we use?",
+      "expected_output": "Mentions Power Servo Trace Viewer, DCPower Trace Viewer, disabling tracing/result processors, DUT-pin scoping, RTE mode, shorter waveforms or averages where allowed, and DETT for long-run memory-leak analysis.",
+      "files": []
+    }
+  ]
+}

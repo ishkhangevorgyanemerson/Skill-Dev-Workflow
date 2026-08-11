@@ -1,0 +1,11 @@
+[project]
+name = "rf-test-plan-layer-mapper"
+version = "0.1.0"
+description = "RF test plan layer mapper skill runtime dependencies"
+requires-python = ">=3.12"
+dependencies = [
+    "openpyxl>=3.1.5",
+]
+
+[tool.uv]
+package = false
